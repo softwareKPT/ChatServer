@@ -14,7 +14,7 @@ public class ChatServer {
 			System.out.println("Echoサーバをポート18080で起動しました");
 			while(true) {
 				socket = server.accept();
-				ChatClientHandler hl = new ChatClientHandler(connectNum, socket);
+				ChatClientHandler hl = new ChatClientHandler(connectNum, socket, this);
 				handler.add(hl);
 				System.out.println("undefined" + connectNum + " connected. クライント " + connectNum + "が接続");
 
