@@ -25,6 +25,6 @@ public class ChatClientHandler extends Thread{
 	private void send(String mes) throws IOException {
 		out.write(mes);
 		out.write("\r\n");
-		out.flush();
+		out.flush(); 
 	}
 }
