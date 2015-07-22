@@ -15,3 +15,4 @@ public class ChatClientHandler extends Thread{
 		this.name = ("undefined" + id);
 		
 	}
+}
